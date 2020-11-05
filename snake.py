@@ -26,7 +26,7 @@ class Grid:
         for x in range(_vertTiles):
             pygame.draw.line(_screen,(0,0,0),(x*_tileSize, 0), (x*_tileSize,_screenHeight))
 
-class _snake:
+class Snake:
     def __init__(self):
         self.bodyPositions = [[5,5],[6,5],[7,5]]
         self.XVelocity = -1
@@ -111,7 +111,7 @@ _font = pygame.font.Font("./OpenSans-Bold.ttf",_fontSize)
 _running = True
 _gameOver = False
 
-_snake = _snake()
+_snake = Snake()
 _grid = Grid()
 _speed = 4
 
